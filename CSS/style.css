@@ -1,50 +1,102 @@
+/* Basic */
 body {
-	background-color: #14131a;
-	color: #fff;
-	font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 .container {
-	max-width: 1140px;
-	margin: auto;
+  max-width: 1140px;
+  margin: auto;
 }
+
+/* Header */
 .header {
-	display: flex;
-	padding-top: 40px;
-	align-items: center;
-	margin-bottom: 80px;
+  display: flex;
+  padding-top: 40px;
+  align-items: center;
+  margin-bottom: 80px;
 }
 
 .logo-link {
-	display: inline-block;
+  display: inline-block;
 }
 .nav-menu {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	display: flex;
+  margin: 0;
+
+  padding: 0;
+  list-style: none;
+
+  display: flex;
 }
 .nav-menu__item {
-	margin: 0 30px 0 0;
+  margin: 0 30px 0 0;
 }
 .nav-menu__link {
-	text-decoration: none;
-	color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .hero__date {
-	display: block;
-	margin-bottom: 38px;
-	font-size: 24px;
-	line-height: 28px;
+  display: block;
+  margin-bottom: 38px;
+  font-size: 24px;
+  line-height: 28px;
 
-	color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 .hero__description {
-	margin-top: 40px;
-	max-width: 423px;
-	font-size: 16px;
-	line-height: 22px;
-	/* or 22px */
+  margin-top: 40px;
 
-	color: rgba(255, 255, 255, 0.8);
+  max-width: 423px;
+  font-size: 16px;
+  line-height: 22px;
+  /* or 22px */
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Button */
+.btn-group {
+  margin-top: 70px;
+  /* width: 415px;
+  height: 46px; */
+}
+.btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-text,
+.btn-icon {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.btn-text {
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 15px;
+}
+
+.btn-pr {
+  color: #8d0019;
+  background-color: #fff;
+}
+
+.btn-link {
+  color: white;
+}
+/* Images */
+.venom {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 15;
+}
+
+.blood {
+  background: url(../images/blood.png) no-repeat top right,  #14131a url(../images/bg.jpg) no-repeat center center / 100%;
 }
