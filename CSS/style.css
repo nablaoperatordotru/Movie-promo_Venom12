@@ -11,14 +11,16 @@ body {
 /* Header */
 .header {
   display: flex;
-  padding-top: 40px;
+  margin-top: 40px;
   align-items: center;
   margin-bottom: 80px;
 }
 
 .logo-link {
   display: inline-block;
+  margin-right: 52px;
 }
+
 .nav-menu {
   margin: 0;
 
@@ -27,6 +29,7 @@ body {
 
   display: flex;
 }
+
 .nav-menu__item {
   margin: 0 30px 0 0;
 }
@@ -98,5 +101,134 @@ body {
 }
 
 .blood {
-  background: url(../images/blood.png) no-repeat top right,  #14131a url(../images/bg.jpg) no-repeat center center / 100%;
+  background: url(../images/blood.png) no-repeat top right,
+    #14131a url(../images/bg.jpg) no-repeat center center / 100%;
+}
+.primary-bg {
+  background: #14131a url(../images/bg.jpg) no-repeat center center / 100%;
+}
+
+/* ! "About" page */
+.content {
+  display: flex;
+}
+
+.col {
+  flex-basis: 50%;
+}
+.description {
+}
+.description__title {
+  margin-bottom: 21px;
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+.description__text {
+  max-width: 423px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  color: rgba(255, 255, 255, 0.8);
+}
+.description__subtitle {
+  margin-top: 0;
+  margin-bottom: 0px;
+
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  color: rgba(255, 255, 255, 0.8);
+}
+.description__cast {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+}
+.description__cast-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0px 30px 0px;
+  column-count: 2;
+  column-gap: 63px;
+
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  color: rgba(255, 255, 255, 0.8);
+}
+.description__item {
+}
+.description__trailer-cover {
+  width: 356px;
+  height: 205px;
+  background: url(../images/trailer.jpg) no-repeat center / 100%;
+
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.description__play-btn {
+  background: #ffffff;
+  border-radius: 50px;
+  width: 45px;
+  height: 45px;
+  border: none;
+}
+.description__play-trailer {
+  width: 15px;
+  height: 15px;
+  transform: translate(1px, 2px);
+  cursor: pointer;
+}
+.poster {
+  display: flex;
+  align-items: start;
+}
+.poster__poster-img {
+  margin-right: 30px;
+}
+.poster__poster-img_foto {
+  border-radius: 5px;
+}
+.poster__film-makers {
+}
+.poster__title {
+  margin: 4px 0px 0px 0px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  color: rgba(255, 255, 255, 0.8);
+}
+.poster__makers-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 16px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  color: rgba(255, 255, 255, 0.8);
+}
+.poster__item {
+}
+.makers-list {
 }
