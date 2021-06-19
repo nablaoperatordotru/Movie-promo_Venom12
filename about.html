@@ -24,9 +24,18 @@
 				<img width="46px" height="71px" src="images/logo.png" alt="logo" class="logo-image">
 			</a>
 			<nav class="nav">
+				<button class="menu-btn">
+					<span class="menu-btn__text">меню</span>
+					<img src="images/Frame3.svg" alt="Logo: menu" class="menu-btn__frame">
+				</button>
+				<button class="close-btn">
+					<span class="close-btn__text">закрыть</span>
+					<img src="images/arrow.svg" alt="Icon: arrow" class="close-btn__arrow">
+				</button>
 				<ul class="nav-menu">
 					<li class="nav-menu__item"><a href="about.html" class="nav-menu__link">о фильме</a></li>
-					<li class="nav-menu__item"><a href="trailer.html" class="nav-menu__link">трейлер</a></li>
+					<li class="nav-menu__item"><a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0"
+							class="nav-menu__link">трейлер</a></li>
 					<li class="nav-menu__item"><a href="actors.html" class="nav-menu__link">актеры</a></li>
 					<li class="nav-menu__item"><a href="premier.html" class="nav-menu__link">премьера</a></li>
 				</ul>
@@ -59,15 +68,17 @@
 				</div>
 
 				<div class="description__trailer-cover">
-					<button class="description__play-btn"><img src="images/play.svg" alt="Lodo: play" class="description__play-trailer"></button>
-					
+					<a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0" class="description__play-btn"><img
+							src="images/play.svg" alt="Lodo: play" class="description__play-trailer"></a>
+
 				</div>
 			</div>
 			<!-- /.col description -->
 			<!--* poster -->
 			<div class="col poster">
 
-				<div class="poster__poster-img"><img height="543px" width="362px" src="images/poster.jpg" alt="Foto: poster" class="poster__poster-img_foto">
+				<div class="poster__poster-img"><img height="543px" width="362px" src="images/poster.jpg" alt="Foto: poster"
+						class="poster__poster-img_foto">
 				</div>
 				<div class="poster__film-makers">
 					<h3 class="poster__title">Режиссер</h3>
@@ -96,6 +107,14 @@
 		<!-- /.content -->
 	</div>
 	<!-- /.container -->
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+	<script src="js/main.js"></script>
 
 </body>
 

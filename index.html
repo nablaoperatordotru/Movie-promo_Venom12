@@ -4,13 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes">
 	<!-- Styles -->
 	<link rel="stylesheet" href="CSS/style.css">
-	<link rel="stylesheet" href="/CSS/normalize.css">
+	<link rel="stylesheet" href="CSS/normalize.css">
 
 	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
 	<title>Главная — Venom 2</title>
@@ -24,9 +23,18 @@
 				<img width="46px" height="71px" src="images/logo.png" alt="logo" class="logo-image">
 			</a>
 			<nav class="nav">
+				<button class="menu-btn">
+					<span class="menu-btn__text">меню</span>
+					<img src="images/Frame3.svg" alt="Logo: menu" class="menu-btn__frame">
+				</button>
+				<button class="close-btn">
+					<span class="close-btn__text">закрыть</span>
+					<img src="images/arrow.svg" alt="Icon: arrow" class="close-btn__arrow">
+				</button>
 				<ul class="nav-menu">
 					<li class="nav-menu__item"><a href="about.html" class="nav-menu__link">о фильме</a></li>
-					<li class="nav-menu__item"><a href=" trailer.html" class="nav-menu__link">трейлер</a></li>
+					<li class="nav-menu__item"><a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0"
+							class="nav-menu__link">трейлер</a></li>
 					<li class="nav-menu__item"><a href="actors.html" class="nav-menu__link">актеры</a></li>
 					<li class="nav-menu__item"><a href="premier.html" class="nav-menu__link">премьера</a></li>
 				</ul>
@@ -43,10 +51,10 @@
 		<!-- /.hero -->
 		<div class="btn-group">
 
-			<button class="btn btn-pr">
+			<a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0" class="btn btn-pr">
 				<img width="15" src="images/play.svg" alt="icon: Playing" class="btn-icon">
 				<span class="btn-text">смотреть трейлер</span>
-			</button>
+			</a>
 
 			<a href="trailer.html" class="btn btn-link">
 				<img width="15" src="images/ticket.svg" alt="icon: ticket" class="btn-icon">
@@ -60,6 +68,13 @@
 	<!-- /.container -->
 	<img src="images/venom.png" alt="img: venom" class="venom">
 
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+	<script src="js/main.js"></script>
 </body>
 
 </html>
